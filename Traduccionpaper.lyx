@@ -1,0 +1,137 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+EVALUACIÓN DE LOS PARADIGMAS DE CADENAS DE SUMINISTRO DE MODELADO COMO SISTEMAS
+ SOCIO-TÉCNICOS COMPLEJOS 
+\end_layout
+
+\begin_layout Standard
+RESUMEN 
+\end_layout
+
+\begin_layout Standard
+Cada paradigma de simulación se caracteriza por un conjunto de supuestos
+ básicos y algunos conceptos básicos para describir el mundo.
+ Estos supuestos, de hecho, limitan el desarrollo de un modelo conceptual
+ para el sistema de estudio.
+ En consecuencia, la elección del paradigma de simulación adecuado es un
+ paso importante en el proceso de desarrollo del modelo.
+ En este trabajo, se discute la selección de un enfoque de simulación para
+ el modelado de la cadena de suministro.
+ Para este propósito, la cadena de suministro se describe desde la perspectiva
+ de dos teorías sistema bien establecido.
+ En primer lugar, las cadenas de suministro se definen como sistemas socio-técni
+cos.
+ Posteriormente, se describen de complejo perspectiva de los sistemas adaptativo
+s.
+ Este estudio proporciona un conjunto de funciones para cadenas de suministro
+ como los sistemas socio-técnicos complejos que se utiliza posteriormente
+ para comparar tres paradigmas de simulación para apoyar modelado de la
+ cadena de la capa - a saber, la dinámica de sistemas, simulación discreta
+ de equilibrio y simulación basada en agentes.
+\end_layout
+
+\begin_layout Standard
+INTRODUCCIÓN
+\end_layout
+
+\begin_layout Standard
+La cadena de suministro es un sistema integrado de empresas que participan
+ en los flujos upstream y downstream de los productos, los servicios, las
+ finanzas y la información de fuentes primarias para el cliente final (Mentzer
+ et al 2001;.
+ Min y Zhou 2002).
+ A pesar de la duración, la mayoría de las cadenas de suministro no están
+ vinculados de una manera lineal y secuencial.
+ Por ejemplo, un fabricante puede tener contacto directo con algunos de
+ los minoristas e incluso los clientes finales.
+ Por otra parte, más de un actor podría estar involucrado en cada etapa
+ de la cadena de suministro, por ejemplo, un fabricante puede recibir la
+ materia prima de proveedores en diferentes lugares y producir muchos tipos
+ de productos y enviarlos a diferentes distribuidores.
+ La toma de decisiones en una red tan compleja de entidades puede ser muy
+ difícil y pide que los modelos adecuados y estudios de simulación.
+ El punto de partida en cualquier diseño de simulación es para identificar
+ el sistema de estudio y definir los problemas basados ​​en el mundo real
+ (Robinson 2004 ) .
+ A partir de la comprensión de la situación del sistema y problema del modelo
+ conceptual se puede derivar .
+ Desarrollar un modelo conceptual, varios supuestos y simplificaciones se
+ suelen incorporar .
+ Parte de estos supuestos y simplificaciones son impuestas por la elección
+ del paradigma de simulación.
+ De hecho , cada paradigma de simulación se caracteriza por un conjunto
+ de centrales o fundamentales supuestos y algunos conceptos subyacentes
+ ( Lorenz y Jost 2006 ) o , como Prados y Robinson ( 1985 , p .
+ 17 ) explican, " todas las disciplinas de modelado depende de suposiciones
+ subyacentes únicos , es decir , cada método de modelado es en sí misma
+ sobre la base de un modelo de cómo el modelado se debe hacer " .
+ Por ejemplo, cuando un modelador selecciona Dinámica de Sistemas como paradigma
+ de simulación , se asume explícitamente que "el mundo se compone de tipos
+ , niveles y ciclos de retroalimentación " ( Meadows 1989 ) .
+ La existencia de estos supuestos en cada paradigma de simulación que implica
+ la selección de un paradigma de modelado es también parte del proceso de
+ conceptualización en cada estudio de simulación
+\end_layout
+
+\end_body
+\end_document

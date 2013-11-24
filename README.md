@@ -1,2 +1,4 @@
 Simulacion
 ==========
+
+=Traduccion del paper=
