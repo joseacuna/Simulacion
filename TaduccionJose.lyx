@@ -1,0 +1,608 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+EVALUACIÓN DE LOS PARADIGMAS DE CADENAS DE SUMINISTRO DE MODELADO COMO SISTEMAS
+ SOCIO-TÉCNICOS COMPLEJOS 
+\end_layout
+
+\begin_layout Section*
+RESUMEN 
+\end_layout
+
+\begin_layout Standard
+Cada paradigma de simulación se caracteriza por un conjunto de supuestos
+ básicos y algunos conceptos básicos para describir el mundo.
+ Estos supuestos, de hecho, limitan el desarrollo de un modelo conceptual
+ para el sistema de estudio.
+ En consecuencia, la elección del paradigma de simulación adecuado es un
+ paso importante en el proceso de desarrollo del modelo.
+ En este trabajo, se discute la selección de un enfoque de simulación para
+ el modelado de la cadena de suministro.
+ Para este propósito, la cadena de suministro se describe desde la perspectiva
+ de dos teorías sistema bien establecido.
+ En primer lugar, las cadenas de suministro se definen como sistemas socio-técni
+cos.
+ Posteriormente, se describen de complejo perspectiva de los sistemas adaptativo
+s.
+ Este estudio proporciona un conjunto de funciones para cadenas de suministro
+ como los sistemas socio-técnicos complejos que se utiliza posteriormente
+ para comparar tres paradigmas de simulación para apoyar modelado de la
+ cadena de la capa - a saber, la dinámica de sistemas, simulación discreta
+ de equilibrio y simulación basada en agentes.
+\end_layout
+
+\begin_layout Section
+INTRODUCCION
+\end_layout
+
+\begin_layout Standard
+La cadena de suministro es un sistema integrado de empresas que participan
+ en los flujos upstream y downstream de los productos, los servicios, las
+ finanzas y la información de fuentes primarias para el cliente final (Mentzer
+ et al 2001;.
+ Min y Zhou 2002).
+ A pesar de la duración, la mayoría de las cadenas de suministro no están
+ vinculados de una manera lineal y secuencial.
+ Por ejemplo, un fabricante puede tener contacto directo con algunos de
+ los minoristas e incluso los clientes finales.
+ Por otra parte, más de un actor podría estar involucrado en cada etapa
+ de la cadena de suministro, por ejemplo, un fabricante puede recibir la
+ materia prima de proveedores en diferentes lugares y producir muchos tipos
+ de productos y enviarlos a diferentes distribuidores.
+ La toma de decisiones en una red tan compleja de entidades puede ser muy
+ difícil y pide que los modelos adecuados y estudios de simulación.
+ El punto de partida en cualquier diseño de simulación es para identificar
+ el sistema de estudio y definir los problemas basados ​​en el mundo real
+ (Robinson 2004 ) .
+ A partir de la comprensión de la situación del sistema y problema del modelo
+ conceptual se puede derivar .
+ Desarrollar un modelo conceptual, varios supuestos y simplificaciones se
+ suelen incorporar .
+ Parte de estos supuestos y simplificaciones son impuestas por la elección
+ del paradigma de simulación.
+ De hecho , cada paradigma de simulación se caracteriza por un conjunto
+ de centrales o fundamentales supuestos y algunos conceptos subyacentes
+ ( Lorenz y Jost 2006 ) o , como Prados y Robinson ( 1985 , p .
+ 17 ) explican, " todas las disciplinas de modelado depende de suposiciones
+ subyacentes únicos , es decir , cada método de modelado es en sí misma
+ sobre la base de un modelo de cómo el modelado se debe hacer " .
+ Por ejemplo, cuando un modelador selecciona Dinámica de Sistemas como paradigma
+ de simulación , se asume explícitamente que "el mundo se compone de tipos
+ , niveles y ciclos de retroalimentación " ( Meadows 1989 ) .
+ La existencia de estos supuestos en cada paradigma de simulación que implica
+ la selección de un paradigma de modelado es también parte del proceso de
+ conceptualización en cada estudio de simulación.
+ En este trabajo, se discute la elección del paradigma de simulación para
+ el modelado de la cadena de suministro.
+ En primer lugar, una cadena de suministro se describe desde la perspectiva
+ de la teoría de los sistemas socio-técnicos y complejos teoría sistemas
+ adaptativos en las secciones 2 y 3.
+ Después de un resumen en tres paradigmas de simulación, estos paradigmas
+ son comparados sobre la base de las características que se describen para
+ una compleja cadena de suministro en la Sección 5.
+ Finalmente, la Sección 6 daalgunas observaciones finales y una discusión
+ general sobre la elección de otro método de modelización.
+\end_layout
+
+\begin_layout Section
+CADENAS DE SUMINISTROS COMO SISTEMAS SOCIO-TECNICOS.
+\end_layout
+
+\begin_layout Standard
+Los sistemas socio-técnicos son " sistemas que involucran tanto a los sistemas
+ físico- técnicos complejos y redes de actores interdependientes " ( de
+ Bruijn y Herder 2007 ) .
+ La contribución fundamental de la teoría socio- técnico es que el comportamient
+o del sistema se puede analizar ( y mejorado ) sólo teniendo en cuenta tanto
+ subsistemas sociales como técnicos y las, interdependencias entre ellos
+ ( Otten et al.
+ 2006 ) .
+ En otras palabras , la estructura y el comportamiento de los dos subsistemas
+ sociales y técnicos dan lugar al comportamiento global de un sistema socio-técn
+ico .
+ Cadenas de suministro modernas pueden ser normalmente vistos como sistemas
+ socio-técnicos .
+ De un lado, la cadena de suministro es una red de elementos técnicos (por
+ ejemplo , instalaciones de fabricación , almacenes, etc ), que están físicament
+e interconectado : el material fluye por las pistas o las naves de los proveedor
+es a los fabricantes ; componentes y piezas semi -acabados se producen en
+ los centros de fabricación y productos terminados se montan en diferentes
+ plantas de ensamblaje , el producto final se envía entonces a los centros
+ de distribución central (CDC) y los Centros Regionales de Distribución
+ (RDC ) y finalmente a los minoristas y los consumidores finales en diferentes
+ lugares (Figura 1 ) .
+ Cada uno de los nodos físicos y enlaces de esta extensa red en sí misma
+ puede comprender varios otros subsistemas físicos.
+ Por ejemplo , las plantas de fabricación contienen líneas de producción
+ , instalaciones de almacenamiento y equipo de manipulación de materiales,
+ mientras que el enlace de transporte entre plantas de montaje y centros
+ de distribución puede incluir a los buques de gran escala , las terminales
+ de carga y equipos de manipulación de materiales en los puertos , trenes
+ o infraestructuras viarias .
+ Por otro lado, en una cadena de suministro , proveedores, fabricantes,
+ minoristas y clientes forman una red social con muchas interacciones formales
+ e informales.
+ La interacción más formal entre los actores es a través de contratos que
+ especifiquen los compromisos y las condiciones de las transacciones entre
+ los diferentes partidos .
+ Además , los flujos de información entre los actores influyen en el proceso
+ de toma de decisiones para la operación y el desarrollo de las entidades
+ físicas .
+ Por ejemplo , el intercambio de información de Punto de Venta (POS ) entre
+ los minoristas y los fabricantes pueden influir en la planificación de
+ la producción en las plantas de fabricación y también reducir el riesgo
+ de agotamiento de las existencias y mejorar la disponibilidad en las estantería
+s de las tiendas de minoristas ( Zhao et al.
+ 2002 ) .
+ Los diferentes tipos de interacciones en la cadena pueden también directa
+ o indirectamente dependen unos de otros .
+ Por ejemplo , el intercambio de información entre las partes de la cadena
+ de suministro puede estar influenciada por la interacción formales (por
+ ejemplo, los términos del contrato ) o factores sociales informales (por
+ ejemplo, los fideicomisos entre las partes ) en la cadena .
+ La decisión de la red social , también , se ve influida y limitada por
+ las características de los componentes físicos.
+ Por ejemplo , la tasa de producción de diferentes productos en una planta
+ de fabricación no sólo está determinada por las órdenes de los clientes
+ y la fijación de contrato (por ejemplo , el producto solicitado por el
+ cliente o el momento de la entrega de la orden ), sino también controlada
+ por las características de las instalaciones de producción (por ejemplo,
+ , la capacidad de producción o el costo / velocidad de cambiar de un producto
+ a otro en una línea de producción ) .
+ En consecuencia , el rendimiento global de la cadena de suministro es la
+ salida de la conducta de ambas redes sociales y físicos y las interacciones
+ e interdependencias entre estas redes.
+\end_layout
+
+\begin_layout Standard
+[imagen]
+\end_layout
+
+\begin_layout Standard
+Sobre la base de todos estos aspectos, un modelo apropiado para la cadena
+ de suministro debe describir necesariamente los aspectos sociales y físicas
+ de la cadena de suministro y permite alteraciones en ambas redes.
+\end_layout
+
+\begin_layout Section
+CADENAS DE SUMINISTROS COMO SISTEMAS ADAPTATIVOS COMPLEJO
+\end_layout
+
+\begin_layout Standard
+Un sistema adaptativo complejo es un sistema que emerge de tiempo durante
+ en una forma coherente , y se adapta y organiza sí mismo sin ninguna entidad
+ singular deliberadamente la gestión o el control de él ( Holanda 1996 )
+ .
+ Para caracterizar un sistema adaptativo complejo , varias características
+ comunes se han discutido en la literatura .
+ todo estas características se pueden clasificar en " nivel micro " y las
+ características de "nivel macro " .
+ Características a nivel micro son sobre los componentes básicos del sistema
+ - que son comúnmente llamados "Agentes" (Holanda , 1996) - y describen
+ la estructura interna de un sistema complejo.
+ Las propiedades a nivel macro, por su parte , describe cómo un sistema
+ complejo parece si observamos (y estudio) que a nivel del sistema .
+ En las siguientes subsecciones , algunas de las características generalmente
+ aceptados de un sistema complejo en cada uno de estos dos niveles se describen
+ .
+ Como se discutió también , una cadena de suministro tiene la mayoría de
+ estas características y, en consecuencia , tiene que ser tratada como un
+ sistema complejo adaptativo en los estudios de modelado y simulación .
+\end_layout
+
+\begin_layout Standard
+[IMAGEN]
+\end_layout
+
+\begin_layout Subsection
+Propiedades a nivel micro de Sistemas Adaptativos Complejos
+\end_layout
+
+\begin_layout Standard
+Las características de nivel micro se describe la estructura de un sistema
+ adaptativo complejo y las propiedades de sus componentes constitutivos.
+ En consecuencia, los términos "complejidad estructural" (Senge, 1990; Daft
+ 2004) o "microestructura" del sistema complejo (Yolles 2006) también se
+ pueden utilizar para hacer referencia a estas propiedades.
+\end_layout
+
+\begin_layout Subsubsection
+Numerosidad y heterogeneidad:
+\end_layout
+
+\begin_layout Standard
+La numerosidad es uno de los atributos aceptado generales de los sistemas
+ complejos (Simon 1962 ) , un sistema complejo se compone de muchos elementos.
+ Además , estos elementos normalmente difieren en sus características .
+ Esta propiedad se llama con frecuencia " la diversidad" ( página 2011 )
+ , " heterogeneidad " ( Miller y página 2007 ) o " diferenciación " (Foster
+ y Hölzl 2004 ) .
+ Por ejemplo, una cadena de suministro consta de muchos actores diferentes
+ (proveedores, clientes, etc ) con diferentes necesidades , objetivos y
+ comportamientos de toma de decisiones .
+ Están ubicados en distintos lugares geográficos (con culturas únicas y
+ el entorno empresarial local), poseen diferentes tipos de tecnologías y
+ piden tipos específicos de productos.
+ Por lo tanto , numerosidad y diversidad se puede ver en dos sub- sistemas
+ físicos y sociales de una cadena.
+ El número de productos ( y su diferenciación ) , la número de líneas de
+ producción (con diferente nivel de flexibilidad para producir diferentes
+ gamas de productos ) y el número de piezas que se necesitan en la producción
+ de los productos finales son ejemplos de factores de complejidad de la
+ cadena de suministro que deriva en el nivel físico .
+ El mayor número de proveedores en el sentido ascendente de la cadena de
+ suministro con diversas características (por ejemplo, el rendimiento de
+ entrega ) y más clientes con diferentes preferencias en cuanto a las caracterís
+ticas del producto y las expectativas de entrega de pedidos son ejemplos
+ de problemas a nivel social que aumentan la complejidad de la cadena de
+ suministro ( Choi y Krause 2006 ; .
+ Bozarth et al 2009 ) .
+\end_layout
+
+\begin_layout Subsubsection
+Interacciones locales:
+\end_layout
+
+\begin_layout Standard
+Otra característica clave de los sistemas complejos es interacciones locales
+ e interdependencias de los elementos del sistema ( Bar- Yam , 2003).
+ Al igual que los propios componentes del sistema, las interacciones se
+ pueden ver en los planos sociales y físicos del sistema .
+ Por ejemplo, en el nivel físico , las entidades técnicas de una cadena
+ de suministro están conectados a través de los flujos de materiales y energía.
+ En el plano social, sin embargo, las interacciones son por lo general en
+ la forma de los contactos y los flujos de información entre los diferentes
+ actores.
+ El otro punto clave es que las interacciones en los sistemas complejos
+ son locales (Calle 2002 ), dos componentes en el sistema ( en el nivel
+ social o físico ) están conectados , ya sea entre sí o no.
+ Por lo tanto , cada componente de un sistema complejo está conectado sólo
+ a un pequeño número de otros componentes y asumiendo un valor medio para
+ la interacción sub-sistemas ' no es aceptable ( Finnigan 2005 ) .
+ Por ejemplo , en el análisis la cooperación entre los actores , los resultados
+ con las interacciones locales será diferente de los resultados para las
+ poblaciones bien mezclados donde todo el mundo puede potencialmente ponerse
+ en contacto con todo el mundo ( Helbing et al.
+ 2011 ) .
+ La otra cuestión importante acerca de las interacciones en sistemas complejos
+ es que - como los componentes del sistema son numerosos y heterogéneos
+ la interacción entre dos componentes también puede ser en numerosas formas
+ y heterogéneos .
+ Por ejemplo , un fabricante puede tener diferentes contratos para diferentes
+ materiales con diferentes condiciones de entrega con un proveedor específico
+ ( es decir , múltiples conexiones sociales ) .
+ Para el envío la materia prima desde el proveedor a sus plantas , el fabricante
+ también podrá considerar diferentes rutas y medios de transporte (es decir
+ , múltiples conexiones físicas) .
+ Las múltiples interacciones entre los dos actores en una cadena también
+ son usualmente interdependientes .
+ Por ejemplo, el flujo de materiales a partir de las instalaciones de almacenami
+ento de proveedores a las plantas de fabricación depende del flujo de informació
+n entre estos dos actores .
+\end_layout
+
+\begin_layout Subsubsection
+anidamiento :
+\end_layout
+
+\begin_layout Standard
+Otra característica de los sistemas complejos es que la organización interna
+ del sistema muestra algún tipo de anidamiento asociado con algún tipo de
+ organización jerárquica (Allen y Starr 1982 ) .
+ En otras palabras, los sistemas complejos se construyen a partir de otros
+ sistemas complejos y podemos llamarlos " sistemas de sistemas " ( Eisner,
+ 2005 ) .
+ Por ejemplo , como en una red de suministro , proveedores, fabricantes,
+ minoristas y clientes de un sistema complejo adaptativo , cada uno de estos
+ actores (por ejemplo , el fabricante) también tiene varias plantas de producció
+n en diferentes lugares y cada una de estas plantas tiene algunos departamentos
+ internos que son responsables de algunas de las actividades internas.
+ La interacción y el comportamiento de los departamentos internos determinan
+ el comportamiento de cada planta , y el comportamiento colectivo de las
+ plantas dan lugar a la conducta de cada empresa en el red , y la interacción
+ entre los diferentes empresas y su comportamiento individual definen el
+ comportamiento de una red de suministro en su conjunto .
+\end_layout
+
+\begin_layout Subsubsection
+adaptabilidad :
+\end_layout
+
+\begin_layout Standard
+Adaptabilidad se refiere a la capacidad de los componentes de un sistema
+ complejo para cambiar su comportamiento como resultado de las interacciones
+ con los otros componentes y el medio ambiente ( Kauffman y MacReady 1995
+ ) .
+ Por ejemplo , los clientes de una cadena de suministro cambian de opinión
+ y percepción sobre el fabricante después de cada transacción.
+ El fabricante también adapta sus políticas (por ejemplo , las políticas
+ de pedidos de materia prima ) en base a la historia de las interacciones
+ con otros actores (por ejemplo, la historia de la entrega de la orden de
+ un proveedores específicos) .
+ La interacción con el medio ambiente también puede influir de forma adaptativa
+ el comportamiento de los actores ( Surana et al .
+ 2005 ) .
+ Para dar algunos ejemplos , los proveedores definen el rango aceptable
+ para el precio de la materia prima de acuerdo con el precio medio de mercado
+ de un determinado producto o nuevas reglamentaciones internacionales o
+ nacionales para prohibir algunos materiales en productos específicos puede
+ obligar a una empresa a rediseñar su cadena de suministro .
+\end_layout
+
+\begin_layout Subsection
+Propiedades a nivel macro de Sistemas Adaptativos Complejos
+\end_layout
+
+\begin_layout Standard
+Además de la complejidad a nivel micro, un sistema adaptativo complejo necesita
+ ser analizada a nivel macro desde el punto de vista ajeno.
+ En cuanto a un sistema en este nivel, un complejo sistema muestra "emergencia",
+ "auto-organización", dependencia de la trayectoria y la co-evolución.
+ La emergencia y autoorganización son características "relacionadas con
+ escamas" de sistema, ya que describen la relación entre la micro-estructura
+ del sistema y comportamiento a nivel de sistema.
+ (Co-) evolución y dependencia de la trayectoria son, sin embargo, característic
+as "relacionados con el tiempo" y describen los cambios en la estructura
+ y el estado del sistema en el tiempo.
+\end_layout
+
+\begin_layout Subsubsection
+Emergencia:
+\end_layout
+
+\begin_layout Standard
+El comportamiento "a nivel de sistema" en un sistema complejo surge del
+ comportamiento de los componentes individuales (tanto sociales como físicos)
+ y sus interacciones (Holland 1999).
+ El rendimiento de la entrega de una cadena de suministro - por ejemplo,
+ el tiempo de ciclo de pedido del cliente - y la solidez de una cadena de
+ suministro para hacer frente a eventos anormales son ejemplos de propiedades
+ emergentes.
+ Ninguna de estas propiedades puede ser asignada a una entidad individual
+ específica, sino que son resultado de la micro-estructura del sistema y
+ todos los comportamientos individuales.
+\end_layout
+
+\begin_layout Subsubsection
+La auto-organización:
+\end_layout
+
+\begin_layout Standard
+La emergencia es una propiedad de todos los sistemas, y en todos los sistemas
+ de las propiedades de nivel de sistema son el resultado de un comportamiento
+ sub-sistema y sus interacciones.
+ Pero lo que es específico de un sistema adaptativo complejo es que el comportam
+iento emergente surge sin ninguna influencia externa, sino que es el resultado
+ de las interacciones de los tomadores de decisiones autónomas locales (Finnigan
+ 2005).
+ Esta propiedad se llama auto-organización (Kauffman, 1993), autogobierno
+ (Berkes 2006) o la toma de decisiones distribuida (Schneeweiss 2003).
+ Por lo tanto, los artefactos complicados como los coches también tienen
+ características emergentes en el sentido de que el funcionamiento general
+ de un automóvil es el resultado de las interacciones entre las diferentes
+ partes del coche.
+ Sin embargo, a diferencia de un coche en el que las propiedades son pre-diseñad
+as e impuestas por el diseñador externo, en un sistema complejo como una
+ cadena de suministro, no hay controlador externo o planificador y el comportami
+ento general del sistema surge de la interacción de actores autónomos y
+ heterogéneos locales.
+\end_layout
+
+\begin_layout Subsubsection
+Co -evolución :
+\end_layout
+
+\begin_layout Standard
+Los componentes de un cambio de sistema complejo adaptativo en el tiempo.
+ Las entidades sociales a aprender y adaptarse al entorno cambiante y la
+ acción de otros actores .
+ Del mismo modo, los componentes físicos podrían cambiar con el tiempo ,
+ las nuevas líneas de producción se pueden instalar en algunas de las plantas
+ de producción , nuevos productos pueden ser diseñados para cumplir con
+ las nuevas necesidades de los clientes finales y los nuevos medios de transport
+e y las rutas están siendo seleccionados por el fabricante o proveedores.
+ Como resultado de todos estos cambios , la estructura del sistema y los
+ cambios de contenido y evolucionar con el tiempo haciendo que la cadena
+ de suministro de un sistema dinámico ( Choi et al.
+ 2001 ) .
+ Los cambios en el sistema , sin embargo , son co - evolutivo en dos perspectiva
+s .
+ En primer lugar, los componentes de un sistema complejo ( socio- técnica)
+ están evolucionando juntos de forma gratuita ( Mittleton - Kelly 2003 )
+ .
+ Los cambios en uno de los componentes en el sistema , altera el contexto
+ de todas las demás entidades .
+ Por ejemplo , el cambio de un proveedor a una nueva tecnología de producción
+ (por ejemplo , con el rápido ritmo de producción ) influiría en todo entidades
+ en el aguas abajo de la cadena de suministro .
+ Del mismo modo, si un fabricante tiene gusto de introducir un nuevo producto
+ , que podría necesitar proveedores para adaptar sus tecnologías para ofrecer
+ algunas partes específicas de nuevos productos.
+ Por lo tanto , todas las entidades dentro de un sistema complejo mutuamente
+ co - evolucionan.
+ Por otra parte, los cambios estructurales en un sistema complejo hacen
+ que la co -evolución de sistema y el entorno ( Choi et al.
+ 2001 ) .
+ A modo de ejemplo , cuando una empresa compra cambia a un nuevo proveedor
+ para un material específico , esta acción a su vez crea un nuevo conjunto
+ de proveedores de segundo y tercer nivel , que ahora entregarán piezas
+ a este nuevo proveedor conjunto.
+ Por otra parte , el cambio de proveedor pone la cadena de suministro en
+ un nuevo ambiente de negocios con nuevos temas culturales , económicos
+ , sociales y normativos.
+\end_layout
+
+\begin_layout Subsubsection
+Dependencia de la trayectoria:
+\end_layout
+
+\begin_layout Standard
+Sendero dependencia significa que los estados y las decisiones actuales
+ y futuras en un sistema complejo dependen del camino de los estados anteriores,
+ las acciones o decisiones, en lugar de simplemente en las condiciones actuales
+ del sistema (Choiet al 2001;.
+ Página 2006).
+ Dependencia de la trayectoria se refleja también en la toma de decisiones
+ de cada uno de los actores en el nivel micro del sistema en las decisiones
+ pasadas hechas por ese actor (y otros actores en el sistema) restringir
+ las opciones actuales (Choi et al.
+ 2001).
+ Por ejemplo, en una cadena de suministro, la decisión de instalar un entorno
+ físico específico influye en todas las decisiones operativas y posibles
+ estados del sistema en el futuro.
+ Una línea de producción multiproducto flexible le da la oportunidad de
+ adaptarse mejor a la demanda y la volatilidad de los cambios en el gusto
+ de los clientes.
+ Otro ejemplo de una cadena de suministro es el proceso de aceptación del
+ pedido, la decisión de aceptar un nuevo pedido de un cliente depende en
+ gran medida de los pedidos aceptados previamente en espera de la tramitación
+ en las plantas de producción.
+\end_layout
+
+\begin_layout Section
+RESUMEN DE PARADIGMAS DE SIMULACIÓN PARA SISTEMAS SOCIO-TÉCNICOS COMPLEJOS
+\end_layout
+
+\begin_layout Standard
+Tres paradigmas principales se han discutido con frecuencia para la simulación
+ de sistemas socio-técnicos complejos: Dinámica de Sistemas (DS), Simulación
+ de Eventos Discretos (DES) y el Agente basado en Modelado(ABM).
+ Cada uno de estos paradigmas viene junto con una serie de supuestos (implícitos
+ o explícitos) en relación con los aspectos claves del mundo como se comenta
+ más adelante.
+\end_layout
+
+\begin_layout Standard
+Dinámica de Sistemas (DS )
+\end_layout
+
+\begin_layout Standard
+La dinámica de sistemas es un campo de estudio que Jay Forrester desarrolló
+ en el Instituto de Tecnología de Massachusetts (MIT ) en los años 1950
+ .
+ Forrester llama a este nuevo campo " Industrial Dynamics " y lo definió
+ como : " el estudio de las características de la captación de información
+ de la actividad industrial para mostrar cómo la estructura organizativa,
+ amplificación ( en las políticas ) , y retrasos de tiempo (en las decisiones
+ y acciones) interactúan para influir en el éxito de la empresa " ( Forrester
+ 1961 , p .
+ 13 ) .
+ Para capturar la complejidad de un sistema , Forrester sugiere el concepto
+ de " bucle de retroalimentación " y discutido que un " sistema complejo
+ tiene una multiplicidad de interactuar retroalimentación bucles "( Forrester
+ 1969 , p .
+ 9 ) .
+ Por lo tanto desde la perspectiva de Forrester , el bucle de realimentación
+ es considerado como el componente básico de un sistema complejo de edificios
+ y la existencia de múltiples bucles de realimentación es el controlador
+ de comportamiento dinámico complejo en un sistema ( Richardson 1991 ) .
+ Intuitivamente, existe un circuito de retroalimentación cuando la información
+ resultante de una acción viaja a través de un sistema y, finalmente, vuelve
+ de alguna forma a su punto de origen , lo que podría influir en la acción
+ futura ( Sterman 2000 ) .
+\end_layout
+
+\begin_layout Standard
+Todos los bucles de retroalimentación identificados para un sistema forman
+ el Diagrama Causal Loop (o también llamado el diagrama de influencia (
+ Coyle 1996 ) ) .
+ Lazo causal Diagramas de ayuda en la visualización de la estructura y el
+ comportamiento de un sistema y el análisis del sistema cualitativamente.
+ Sin embargo, el efecto neto global de todos los bucles de retroalimentación
+ en un sistema muy complejo que no se puede determinar simplemente mediante
+ la inspección del diagrama de bucle causal.
+ El mismo sistema elemento puede pertenecer a varios bucles de retroalimentación
+ , algunas negativas y algunas positivas , y puede no ser inmediatamente
+ evidente que bucle domina el comportamiento del sistema y unidades de (
+ Heath et al .
+ 2011 ) .
+ Para determinar esto , un análisis cuantitativo detallado del comportamiento
+ del sistema es necesario .
+ Para este propósito, un diagrama de ciclo causal que hay que transformar
+ a un diagrama de flujos-fondos ( Forrester 1968 ), que consiste en dos
+ tipos fundamentales de variables: Acciones ( o niveles) y flujos (o tarifas)
+ .
+ Las acciones son las acumulaciones de las tasas de flujo , los cuales ellos
+ mismos son el resultado de las reglas de decisión .
+ El proceso de acumulación se expresa matemáticamente por la integración
+ de la diferencia neta entre el flujo de entrada y flujo de salida a través
+ del tiempo ( Forrester 1968 ) .
+ Por lo tanto , el estado de un sistema en cualquier punto específico en
+ el tiempo se describe únicamente por las variables de nivel .
+ Esto significa explícitamente que los modelos de dinámica de sistemas paradigmá
+ticos los problemas sistémicos a nivel agregado en el tiempo.
+ Por otra parte , los modelos de dinámica de sistemas se formulan típicamente
+ en tiempo continuo y asumen las variables continuas , aunque la mayoría
+ de los simuladores de discretizar el tiempo para resolver el conjunto de
+ ecuaciones diferenciales que describen el comportamiento del sistema (
+ Sterman 2000 ) .
+ En resumen, la dinámica de sistemas es un paradigma de simulación basado
+ en la retroalimentación.
+ El concepto de realimentación está en el corazón de la dinámica de sistemas
+ y diagramas de circuitos de retroalimentación de información y causalidad
+ circular son herramientas para la conceptualización de la estructura de
+ los sistemas complejos (Forrester 1961, Richardson 1991).
+\end_layout
+
+\end_body
+\end_document
