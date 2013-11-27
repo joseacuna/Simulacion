@@ -589,6 +589,91 @@ Sendero dependencia significa que los estados y las decisiones actuales
 \end_layout
 
 \begin_layout Section
+RESUMEN DE PARADIGMAS DE SIMULACIÓN PARA SISTEMAS SOCIO-TÉCNICOS COMPLEJOS
+\end_layout
+
+\begin_layout Standard
+Tres paradigmas principales se han discutido con frecuencia para la simulación
+ de sistemas socio-técnicos complejos: Dinámica de Sistemas (DS), Simulación
+ de Eventos Discretos (DES) y el Agente basado en Modelado(ABM).
+ Cada uno de estos paradigmas viene junto con una serie de supuestos (implícitos
+ o explícitos) en relación con los aspectos claves del mundo como se comenta
+ más adelante.
+\end_layout
+
+\begin_layout Standard
+Dinámica de Sistemas (DS )
+\end_layout
+
+\begin_layout Standard
+La dinámica de sistemas es un campo de estudio que Jay Forrester desarrolló
+ en el Instituto de Tecnología de Massachusetts (MIT ) en los años 1950
+ .
+ Forrester llama a este nuevo campo " Industrial Dynamics " y lo definió
+ como : " el estudio de las características de la captación de información
+ de la actividad industrial para mostrar cómo la estructura organizativa,
+ amplificación ( en las políticas ) , y retrasos de tiempo (en las decisiones
+ y acciones) interactúan para influir en el éxito de la empresa " ( Forrester
+ 1961 , p .
+ 13 ) .
+ Para capturar la complejidad de un sistema , Forrester sugiere el concepto
+ de " bucle de retroalimentación " y discutido que un " sistema complejo
+ tiene una multiplicidad de interactuar retroalimentación bucles "( Forrester
+ 1969 , p .
+ 9 ) .
+ Por lo tanto desde la perspectiva de Forrester , el bucle de realimentación
+ es considerado como el componente básico de un sistema complejo de edificios
+ y la existencia de múltiples bucles de realimentación es el controlador
+ de comportamiento dinámico complejo en un sistema ( Richardson 1991 ) .
+ Intuitivamente, existe un circuito de retroalimentación cuando la información
+ resultante de una acción viaja a través de un sistema y, finalmente, vuelve
+ de alguna forma a su punto de origen , lo que podría influir en la acción
+ futura ( Sterman 2000 ) .
+\end_layout
+
+\begin_layout Standard
+Todos los bucles de retroalimentación identificados para un sistema forman
+ el Diagrama Causal Loop (o también llamado el diagrama de influencia (
+ Coyle 1996 ) ) .
+ Lazo causal Diagramas de ayuda en la visualización de la estructura y el
+ comportamiento de un sistema y el análisis del sistema cualitativamente.
+ Sin embargo, el efecto neto global de todos los bucles de retroalimentación
+ en un sistema muy complejo que no se puede determinar simplemente mediante
+ la inspección del diagrama de bucle causal.
+ El mismo sistema elemento puede pertenecer a varios bucles de retroalimentación
+ , algunas negativas y algunas positivas , y puede no ser inmediatamente
+ evidente que bucle domina el comportamiento del sistema y unidades de (
+ Heath et al .
+ 2011 ) .
+ Para determinar esto , un análisis cuantitativo detallado del comportamiento
+ del sistema es necesario .
+ Para este propósito, un diagrama de ciclo causal que hay que transformar
+ a un diagrama de flujos-fondos ( Forrester 1968 ), que consiste en dos
+ tipos fundamentales de variables: Acciones ( o niveles) y flujos (o tarifas)
+ .
+ Las acciones son las acumulaciones de las tasas de flujo , los cuales ellos
+ mismos son el resultado de las reglas de decisión .
+ El proceso de acumulación se expresa matemáticamente por la integración
+ de la diferencia neta entre el flujo de entrada y flujo de salida a través
+ del tiempo ( Forrester 1968 ) .
+ Por lo tanto , el estado de un sistema en cualquier punto específico en
+ el tiempo se describe únicamente por las variables de nivel .
+ Esto significa explícitamente que los modelos de dinámica de sistemas paradigmá
+ticos los problemas sistémicos a nivel agregado en el tiempo.
+ Por otra parte , los modelos de dinámica de sistemas se formulan típicamente
+ en tiempo continuo y asumen las variables continuas , aunque la mayoría
+ de los simuladores de discretizar el tiempo para resolver el conjunto de
+ ecuaciones diferenciales que describen el comportamiento del sistema (
+ Sterman 2000 ) .
+ En resumen, la dinámica de sistemas es un paradigma de simulación basado
+ en la retroalimentación.
+ El concepto de realimentación está en el corazón de la dinámica de sistemas
+ y diagramas de circuitos de retroalimentación de información y causalidad
+ circular son herramientas para la conceptualización de la estructura de
+ los sistemas complejos (Forrester 1961, Richardson 1991).
+\end_layout
+
+\begin_layout Section
 Resumen de paradigmas de simulación para sistemas socio-técnicos complejos
 \end_layout
 

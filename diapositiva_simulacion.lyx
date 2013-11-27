@@ -291,10 +291,7 @@ status open
 
 \end_inset
 
-
 Ejemplo
-\lang spanish
-
 \begin_inset ERT
 status open
 
@@ -593,6 +590,51 @@ El desarrollo de un modelo basado en agentes típicamente comienza por definir
 n entre sí y cómo los agentes interactúan con el medio ambiente.
  Los agentes su estado y el comportamiento y el entorno se estructuran siguiendo
  un programa de simulación.
+\end_layout
+
+\begin_layout Section
+Comparación de Paradigmas
+\end_layout
+
+\begin_layout Subsection
+Comparación Nivel Micro
+\end_layout
+
+\begin_layout BeginFrame
+Nivel Micro
+\end_layout
+
+\begin_layout Standard
+ABS , DES y SD paradigmas de modelado toman fundamentalmente diferentes
+ perspectivas al modelar la complejidad a nivel micro de las cadenas de
+ suministro.
+ SD básicamente pertenece a una clase de métodos de modelización que generalment
+e se denomina " modelado de top-down " , es decir , centrado en características
+ observables del sistema y el modelado de los componentes del sistema con
+ variables de estado agregados.Por el contrario, DES y ABM tienen una perspectiva
+ " bottom-up " en el modelado , que comienzan con una representación detallada
+ de las partes individuales del sistema y sus interacciones.
+ 
+\end_layout
+
+\begin_layout Subsection
+Comparación Nivel Macro
+\end_layout
+
+\begin_layout BeginFrame
+Nivel Macro
+\end_layout
+
+\begin_layout Section
+Conclusión
+\end_layout
+
+\begin_layout BeginFrame
+Conclusión
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout EndFrame
