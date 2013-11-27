@@ -1,0 +1,576 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+4 Resumen de paradigmas de simulación para sistemas socio-técnicos complejos
+\end_layout
+
+\begin_layout Standard
+Tres paradigmas principales se han discutido con frecuencia para la simulación
+ de sistemas socio-técnicos complejos: Dinámica de Sistemas (DS), Simulación
+ de Eventos Discretos (DES) y el Agente basado Modeling (ABM).
+ Cada uno de estos paradigmas viene junto con un grupo de supuestos (implícitos
+ o explícitos) con respecto a los aspectos clave del mundo tal como se analiza
+ más adelante.
+\end_layout
+
+\begin_layout Subsection*
+4.1 Sistemas Dinámicos (SD)
+\end_layout
+
+\begin_layout Standard
+La dinámica de sistemas es un campo de estudio que Jay Forrester desarrolló
+ en el Instituto de Tecnología de Massachusetts (MIT) en los años 1950 .
+ Forrester llama a este nuevo campo 
+\begin_inset Quotes eld
+\end_inset
+
+Industrial Dynamics
+\begin_inset Quotes erd
+\end_inset
+
+ y lo definió como : 
+\begin_inset Quotes eld
+\end_inset
+
+el estudio de las características de la captación de información de la actividad
+ industrial para mostrar cómo la estructura organizativa , la amplificación
+ ( en la política ) , y retrasos de tiempo ( en las decisiones y acciones
+ ) interactúan para influir en el éxito de la empresa
+\begin_inset Quotes erd
+\end_inset
+
+ ( Forrester 1961 , p .
+ 13 ) .
+ Para capturar la complejidad de un sistema , Forrester sugiere el concepto
+ 
+\begin_inset Quotes eld
+\end_inset
+
+circuito de retroalimentación
+\begin_inset Quotes erd
+\end_inset
+
+ y discutido que un " sistema complejo tiene una multiplicidad de interactuar
+ circuitos de retroalimentación ( Forrester 1969 , p .
+ 9 ) .
+ Por lo tanto desde la perspectiva de Forrester , el bucle de realimentación
+ es considerado como el bloque de construcción básico de un sistema complejo
+ y la existencia de múltiples ciclos de retroalimentación es el motor del
+ comportamiento dinámico complejo en un sistema (Richardson 1991 ) .
+ Intuitivamente, existe un circuito de retroalimentación cuando la información
+ resultante de una acción viaja a través de un sistema y, finalmente, vuelve
+ en cierta forma a su punto de origen , lo que podría influir en la acción
+ futura ( Sterman 2000 ) .
+\begin_inset Newline newline
+\end_inset
+
+Todos los bucles de retroalimentación identificados para un sistema forman
+ el Diagrama ciclo casual (o también llamado el diagrama de influencia (
+ Coyle 1996 ) ) .
+ Diagrama bucle casual ayuda en la visualización de la estructura y el comportam
+iento de un sistema y en el análisis del sistema cualitativamente.
+ Sin embargo, el efecto neto global de todos los ciclos de retroalimentación
+ en un sistema muy complejo que no se puede determinar simplemente mediante
+ la inspección del diagrama de ciclo causal.
+ El mismo sistema elemento puede pertenecer a varios bucles de retroalimentación
+ , algunas negativas y algunas positivas , y puede no ser inmediatamente
+ evidente que bucle domina el comportamiento del sistema y unidades de (
+ Heath et al .
+ 2011 ) .
+ Para determinar esto , es necesario un análisis cuantitativo y detallado
+ del comportamiento del sistema.
+ Para este propósito,Ah un diagrama de ciclo causal se transformar a un
+ diagrama de flujos-fondos ( Forrester 1968 ),consiste en dos tipos fundamentale
+s de variables: Acciones ( o niveles) y flujos (o tarifas) .
+ Las acciones son las acumulaciones de las tasas de flujo , los cuales ellos
+ mismos son el resultado de las reglas de decisión .
+ El proceso de acumulación se expresa matemáticamente por la integración
+ de la diferencia neta entre el flujo de entrada y flujo de salida a través
+ del tiempo ( Forrester 1968 ) .
+ Por lo tanto , el estado de un sistema en cualquier punto específico en
+ el tiempo se describe únicamente por las variables de nivel .
+ Esto explícitamente quiere decir que el paradigma de dinámica de sistema
+ modela los problemas sistémicos en un nivel agregado con el tiempo.
+ Por otra parte , los modelos de sistemas dinámicos se formulan típicamente
+ en tiempo continuo y asumen las variables continuas ,aunque la mayoría
+ de los simuladores dividen el tiempo para resolver el conjunto de ecuaciones
+ diferenciales que describen el comportamiento del sistema ( Sterman 2000
+ ) .
+\end_layout
+
+\begin_layout Standard
+En resumen, la dinámica de sistemas es un paradigma de simulación basado
+ en la retroalimentación.
+ El concepto de realimentación está en el corazón de la dinámica de sistemas
+ y diagramas de circuitos de retroalimentación de información y la causalidad
+ circular son herramientas para la conceptuación de la estructura de los
+ sistemas complejos (Forrester 1961, Richardson 1991).
+\end_layout
+
+\begin_layout Subsection*
+4.2 Simulación de eventos discretos (Des)
+\end_layout
+
+\begin_layout Standard
+El paradigma de modelado que sugiere la aproximación de los sistemas del
+ mundo real y los procesos con distintos eventos se llama Simulación de
+ eventos discretos ( Altiok y Melamed 2007 ) .
+ En este paradigma de simulación , el sistema posee en cualquier punto en
+ el tiempo un estado cuya evolución en el tiempo es desencadenada por eventos
+ discretos .
+ La evolución del modelo se rige por un reloj y una lista de eventos en
+ orden cronológico .
+ La ejecución de la simulación se inicia mediante la colocación de un evento
+ inicial en la lista de eventos , procede como un bucle infinito que ejecuta
+ el actual caso más inminente (el que está a la cabeza de la lista de eventos
+ ) , y termina cuando un evento se detiene o la lista queda vacía .
+ Además de esta formalización para DES - que normalmente se denomina 
+\begin_inset Quotes eld
+\end_inset
+
+Evento - Programación ( ES )
+\begin_inset Quotes erd
+\end_inset
+
+ ( Cassandras y Lafortune 1999 ) o 
+\begin_inset Quotes eld
+\end_inset
+
+Modelado orientado a eventos
+\begin_inset Quotes erd
+\end_inset
+
+ ( Silver et al 2010 .
+ ) - Un número de otros métodos y formalizaciones para llevar a cabo la
+ simulación de eventos discretos se han discutido en la literatura ( Pidd
+ 1998 ) .
+ Dos formalizaciones importantes son 
+\begin_inset Quotes eld
+\end_inset
+
+La actividad de exploración (AS )
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Proceso de Interacción (PI )
+\begin_inset Quotes erd
+\end_inset
+
+ .
+ Estas diferentes formalismos generalmente se llaman las diferentes 
+\begin_inset Quotes eld
+\end_inset
+
+visiones del mundo
+\begin_inset Quotes erd
+\end_inset
+
+ ( Altiok y Melamed 2007 ) o diferentes 
+\begin_inset Quotes eld
+\end_inset
+
+estrategias de simulación
+\begin_inset Quotes erd
+\end_inset
+
+ ( Martínez y Ioannou 1999 ) en la literatura DES.
+ En enfoque de la actividad de exploración , el modelo se centra en las
+ actividades y sus condiciones previas.
+ Por ejemplo, en el enfoque de Petri -Nets - que se clasifica como un escaneo
+ de actividad al método - el modelo se compone de dos tipos de nodos , la
+ 
+\begin_inset Quotes eld
+\end_inset
+
+transición
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+lugar
+\begin_inset Quotes erd
+\end_inset
+
+ , y una 
+\begin_inset Quotes eld
+\end_inset
+
+transición
+\begin_inset Quotes erd
+\end_inset
+
+ se disparará si hay suficientes 
+\begin_inset Quotes eld
+\end_inset
+
+fichas
+\begin_inset Quotes erd
+\end_inset
+
+ en cada de sus 
+\begin_inset Quotes eld
+\end_inset
+
+lugares
+\begin_inset Quotes erd
+\end_inset
+
+ de entrada (Miller et al.
+ 2004 ) .
+ El enfoque basado en procesos de interacción (PI ) se centra en los procesos
+ que describen el ciclo de vida de una entidad en el sistema ( Banks et
+ al.
+ 2010 ) .
+ PI asume que las entidades del sistema progresarán a través de una serie
+ de pasos y cada paso requiere de uno o varios recursos y toma un cierta
+ (por lo general estocástico ) cantidad de tiempo ( Silver et al.
+ 2010 ) .
+ La vista del proceso es el formalismo más comúnmente utilizado para la
+ DES y la mayoría del software comercial DES como GPSS , SIMAN , SIMSCRIPT
+ y SLAM se basan en este enfoque.
+ Debido a la popularidad de este método, el DES también a veces se denomina
+ paradigma 
+\begin_inset Quotes eld
+\end_inset
+
+processcentric
+\begin_inset Quotes erd
+\end_inset
+
+ Simulación ( Salamon 2011 ) .
+\end_layout
+
+\begin_layout Standard
+Además de estas tres visiones del mundo clásico, existen otros métodos de
+ modelización populares que por lo general se clasifican como DES.
+ Modelos de transición de estados (por ejemplo, cadenas de Markov) cuya
+ atención se centra en la identificación de los estados del sistema, determinar
+ cuáles de los estados están vinculados y que describe las transiciones,
+ es un ejemplo (Miller et al.
+ 2004).
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, a pesar de SD tiene una conceptualización comúnmente
+ mas aceptada para un sistema, el DES tiene muchas formas diferentes de
+ conceptualizar un sistema.
+ Sin embargo, en todos estos enfoques, las entidades que describen la estructura
+ del sistema (eventos, actividades y procesos) son 
+\begin_inset Quotes eld
+\end_inset
+
+objetos
+\begin_inset Quotes erd
+\end_inset
+
+ pasivos (Sieber et al 2010.), Sino que son pre-definidos por el modelador.
+ La principal fortaleza de DES, sin embargo, es su capacidad para modelar
+ entidades distintivas con características heterogéneas.
+\end_layout
+
+\begin_layout Subsubsection*
+4.3 Modelo Basado en Agentes (ABM)
+\end_layout
+
+\begin_layout Standard
+El modelado basado en agentes es un tipo de modelado en el que la atención
+ se centra en la representación de los individuos en el sistema - que se
+ denominan 
+\begin_inset Quotes eld
+\end_inset
+
+Agentes
+\begin_inset Quotes erd
+\end_inset
+
+ - (como las personas o empresas) y su interacción con los demás y su entorno
+ (Norte y Macal 2007 ).
+ El comportamiento global (a nivel de sistema),surge como resultado de las
+ interacciones de los agentes y de sus comportamientos individuales.
+\end_layout
+
+\begin_layout Standard
+Para describir un 
+\begin_inset Quotes eld
+\end_inset
+
+agente
+\begin_inset Quotes erd
+\end_inset
+
+, como elemento central del ABM existe una amplio gama de propiedades que
+ se han discutido en la literatura.
+ Existe un consenso general de que el agente tiene que ser autónomo, pero
+ hay poco acuerdo más allá de esto, porque las propiedades potenciales pueden
+ variar en su importancia para los diferentes dominios y diferentes aplicaciones
+ (Wooldridge, 2002).
+ Las siguientes características son, sin embargo, entre las características
+ que por lo general son mencionados por un agente en el modelo basado en
+ agentes (Wooldridge y Jennings 1995; Norte y Macal 2007):
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Autonomía:
+\series default
+ los agentes tienen un cierto nivel de autonomía, ya que pueden tomar decisiones
+ sin un controlador central.
+ Para lograr esto, tienen un conjunto de reglas que determina su comportamiento.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reactividad:
+\series default
+ Los agentes son capaces de percibir los cambios en el medio ambiente y
+ otros agentes y luego responder a esos cambios con sus propias acciones
+ cuando sea necesario.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Pro-actividad:
+\series default
+ los agentes tienen la capacidad proactiva, que no sólo actúan en respuesta
+ a los cambios que se han producido en su entorno pero tienen sus propias
+ metas.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capacidad social:
+\series default
+ agentes tienen la capacidad social, para interactuar y comunicarse entre
+ sí.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Adaptabilidad:
+\series default
+ los agentes pueden tener memoria para aprender y adaptar sus comportamientos
+ basados ​​en la experiencia.
+\end_layout
+
+\begin_layout Standard
+El desarrollo de un modelo basado en agentes típicamente comienza por definir
+ los estados internos (o atributos) y las reglas de comportamiento de los
+ diferentes tipos de agentes (Norte y Macal 2007).
+ Las reglas de comportamiento se describen, por ejemplo, cómo un agente
+ cambia de estado o selecciona una acción por hacer, cómo los agentes interactúa
+n entre sí y cómo los agentes interactúan con el medio ambiente.
+ Los agentes su estado y el comportamiento y el entorno se estructuran siguiendo
+ un programa de simulación.
+ la programación de ABM se puede realizar en cualquier lenguaje, pero 
+\begin_inset Quotes eld
+\end_inset
+
+Programación orientada a objetos
+\begin_inset Quotes erd
+\end_inset
+
+ es el paradigma de programación más recomendado debido a las similitudes
+ entre los dos conceptos de 
+\begin_inset Quotes eld
+\end_inset
+
+objeto
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+agente
+\begin_inset Quotes erd
+\end_inset
+
+ (Gilbert y Terna 2000).
+\end_layout
+
+\begin_layout Standard
+Comparando con otros dos paradigmas , ABM es un relativamente nuevo.
+ Sin embargo , algunas características específicas de ABM lo convierten
+ en un paradigma popular para el modelado de sistemas complejos en diferentes
+ dominios hace dos décadas atras.
+ En primer lugar, es fácil de modelar agentes heterogéneos en un modelo
+ basado en el agente .
+ La heterogeneidad puede ser tanto en el comportamiento ( toma de decisiones
+ )de las normas de los agentes y de sus atributos ( Gilbert 2007 ) .
+ En segundo lugar, los mecanismos de aprendizaje y de comportamiento adaptativo
+ pueden representarse fácilmente en un modelo basado en agentes .
+ Esto es especialmente importante en los dominios en los que es necesaria
+ una representación explícita de la toma de decisiones humana para modelar
+ el comportamiento del sistema.
+ Algunos ejemplos son la economía, la simulación de multitudes y la gestión
+ del tráfico ( Helbing 2001 ) .
+ La otra característica particular de la ABM es la capacidad de modelar
+ los espectros espaciales .
+ En algunos casos , como los problemas ecológicos, el uso del suelo de modelos
+ o sistemas URBANISMO ( Crooks et al.
+ 2008 ), una representación espacial explícita puede ser necesaria para
+ el análisis.
+ Por último , un modelo basado en agentes puede ser fácilmente ampliado
+ o utilizado para otros fines .
+ Por ejemplo , es fácil añadir más agentes a un modelo previamente desarrollado
+ o cambiar el nivel de detalle por 
+\begin_inset Quotes eld
+\end_inset
+
+afinar la complejidad
+\begin_inset Quotes erd
+\end_inset
+
+ de los agentes , por ejemplo , en términos del grado de racionalidad y
+ reglas de interacción ( Bonabeau 2002b) .
+ Esto es especialmente útil cuando el nivel adecuado de descripción o complejida
+d no se conoce de antemano y encontrar requiere algunos retoques .
+ Por otra parte , se da la oportunidad para desarrollar modelos basados
+ ​​en agentes en un proceso iterativo en el que el modelador puede comenzar
+ con un modelo idealizado y general y hacer que la estructura subyacente
+ de modelo más complicado de forma iterativa mediante la adición de detalles
+ ( Epstein 2006 ).
+\end_layout
+
+\begin_layout Section*
+5 Comparación de paradigmas de simulación para simulación de cadena suministro.
+\end_layout
+
+\begin_layout Standard
+Tres paradigmas principales para el modelado de sistemas complejos consideran
+ diferentes bloques de construcción para la descripción de la estructura
+ del sistema/comportamiento y tienen algunos supuestos clave acerca del
+ mundo.
+ Un resumen de las principales características de estos enfoques se presentan
+ en la Tabla 1.
+ Por otra parte, estos paradigmas tienen diferentes capacidades para capturar
+ las características a nivel micro y macro de una cadena de suministro como
+ un sistema socio-técnico complejo.
+\end_layout
+
+\begin_layout Subsection*
+5.1 Capturando la Complejidad nivel micro
+\end_layout
+
+\begin_layout Standard
+ABS , DES y SD paradigmas de modelado toman fundamentalmente diferentes
+ perspectivas al modelar la complejidad a nivel micro de las cadenas de
+ suministro.
+ SD básicamente pertenece a una clase de métodos de modelización que generalment
+e se denomina " modelado de top-down " , es decir , centrado en características
+ observables del sistema y el modelado de los componentes del sistema con
+ variables de estado agregados ( Heath et al.
+ 2011 ) .Por el contrario, DES y ABM tienen una perspectiva " bottom-up "
+ en el modelado , que comienzan con una representación detallada de las
+ partes individuales del sistema y sus interacciones.
+ 
+\end_layout
+
+\begin_layout Standard
+El enfoque top-down y de alto nivel de agregación en SD podría ser problemático
+ para el modelado de sistemas complejos.
+ En primer lugar , SD es incapaz de modelar la heterogeneidad y numeroso
+ en un sistema complejo .
+ Las entidades discretas que componen una compleja cadena de suministro
+ ( personas, empresas, productos , etc ) se modelan de forma homogénea y
+ representados por sus cantidades ( descritos como observables del sistema)
+ en los modelos SD ( Rahmandad y Sterman 2008 ) .
+ Para decirlo de otra manera, en lugar de trabajar con entidades distintivos
+ de diferentes características , SD trabaja con una "persona promedio ",
+ que representan una población de entidades ( Scholl , 2001 ) .
+ Del mismo modo, SD tiene una visión global de las interacciones en un sistema
+ complejo y asume una mezcla perfecta dentro de los compartimientos de un
+ sistema donde todo el mundo está conectado a todos los demás (Rahmandad
+ y Sterman 2008).
+ Suponiendo una distribución uniforme de las interacciones entre los actores
+ del sistema es una cosa difícil, porque como se ha mencionado antes las
+ interacciones en un sistema complejo son locales y no podemos definir un
+ valor medio para que los represente en un modelo (Finnigan 2005).
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
