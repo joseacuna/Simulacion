@@ -14,7 +14,7 @@
 \maintain_unincluded_children false
 \language spanish
 \language_package default
-\inputencoding auto
+\inputencoding utf8x
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -68,8 +68,8 @@
 \begin_body
 
 \begin_layout Title
-Evaluación de los paradigmas de cadenas de suministro de modelado como sistemas
- socio-técnicos complejos
+Paradigmas de cadenas de suministro de modelado como sistemas socio-técnicos
+ complejos
 \end_layout
 
 \begin_layout Author
@@ -201,12 +201,398 @@ Introducción
 Introducción
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+La cadena de suministro es un sistema integrado de empresas que participan
+ en los flujos upstream y downstream de los productos, los servicios, las
+ finanzas y la información de fuentes primarias para el cliente final.
+ A pesar de la duración, la mayoría de las cadenas de suministro no están
+ vinculados de una manera lineal y secuencial.
+\end_layout
+
+\begin_layout BeginFrame
+Introducción
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El punto de partida en cualquier diseño de simulación es identificar el
+ sistema de estudio y definir los problemas basados ​​en el mundo real.
+ A partir de la comprensión de la situación del sistema y problema del modelo
+ conceptual se puede desarrollar un modelo conceptual, varios supuestos
+ y simplificaciones que se suelen incorporar.
+ Parte de estos supuestos y simplificaciones son impuestas por la elección
+ del paradigma de simulación.
+ De hecho , cada paradigma de simulación se caracteriza por un conjunto
+ de centrales o fundamentales supuestos y algunos conceptos subyacentes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La existencia de estos supuestos implica la selección de un paradigma de
+ modelado es también parte del proceso de conceptualización en cada estudio
+ de simulación.
+\end_layout
+
 \begin_layout Section
-Cadenas de Suministros como sistemas socio-técnicos
+CS como sistemas socio-técnicos
 \end_layout
 
 \begin_layout Subsection
-Cadenas de Suministros como sistemas socio-técnicos
+Cadenas de Suministros Socio-Técnicos
+\end_layout
+
+\begin_layout BeginFrame
+CS Socio-Técnicos
+\end_layout
+
+\begin_layout Itemize
+Los sistemas socio-técnicos son "sistemas que involucran tanto a los sistemas
+ físico-técnicos complejos y redes de actores interdependientes".
+\end_layout
+
+\begin_layout Itemize
+Cadenas de suministro modernas pueden ser normalmente vistos como sistemas
+ socio-técnicos.
+\end_layout
+
+\begin_layout Itemize
+La cadena de suministro es una red de elementos técnicos (por ejemplo ,
+ instalaciones de fabricación , almacenes, etc ), que están físicamente
+ interconectados.
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+Ejemplo
+\lang spanish
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Las plantas de fabricación contienen líneas de producción , instalaciones
+ de almacenamiento y equipo de manipulación de materiales, mientras que
+ las lineas de transporte entre plantas de montaje y centros de distribución
+ puede incluir a los buques de gran escala , las terminales de carga y equipos
+ de manipulación de materiales en los puertos , trenes o infraestructuras
+ viarias donde todo representa una cadena de suministro.
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Itemize
+En una cadena de suministro también pueden estar incorporados , proveedores,
+ fabricantes, minoristas y clientes donde forman una red social con muchas
+ interacciones formales e informales.
+ La interacción más formal entre los actores es a través de contratos que
+ especifiquen los compromisos y las condiciones de las transacciones entre
+ los diferentes partidos donde representan los flujos de información entre
+ ellos.
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Itemize
+En consecuencia , el rendimiento global de la cadena de suministro es la
+ salida de la conducta de ambas redes sociales y físicos y las interacciones
+ e interdependencias entre estas redes.
+\end_layout
+
+\begin_layout Itemize
+Sobre la base de todos estos aspectos, un modelo apropiado para la cadena
+ de suministro debe describir necesariamente los aspectos sociales y físicas
+ de la cadena de suministro y permite alteraciones en ambas redes.
+\end_layout
+
+\begin_layout Section
+CS como sistemas adaptativos complejos
+\end_layout
+
+\begin_layout Subsection
+Cadena Suministro Sistemas Adaptativos Complejos.
+\end_layout
+
+\begin_layout BeginFrame
+CS de sistemas adaptativos complejos
+\end_layout
+
+\begin_layout Itemize
+Un sistema adaptativo complejo es un sistema que emerge de tiempo durante
+ en una forma coherente , y se adapta y organiza sí mismo sin ninguna entidad
+ singular deliberadamente la gestión o el control de él.
+ Para caracterizar un sistema adaptativo complejo , varias características
+ comunes se han discutido en la literatura .
+ todo estas características se pueden clasificar en " nivel micro " y las
+ características de "nivel macro ".
+\end_layout
+
+\begin_layout Itemize
+Nivel Micro: Los componentes básicos del sistema que son comúnmente llamados
+ "Agentes".
+\end_layout
+
+\begin_layout Itemize
+Nivel Macro: El sistema complejo se observa a nivel de sistema es decir
+ desde fuera de el.
+\end_layout
+
+\begin_layout Subsection
+Nivel Micro
+\end_layout
+
+\begin_layout BeginFrame
+Propiedades del Nivel Micro
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Numerosidad y heterogeneidad
+\series default
+: Un sistema complejo se compone de muchos elementos.
+ Además , estos elementos normalmente difieren en sus características .
+ Esta propiedad se llama con frecuencia " la diversidad"," heterogeneidad
+ "o " diferenciación " .
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Interacciones locales:
+\series default
+ Interacciones locales e interdependencias de los elementos del sistema.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Anidamiento :
+\series default
+ Los sistemas complejos se construyen a partir de otros sistemas complejos
+ y podemos llamarlos " sistemas de sistemas "
+\end_layout
+
+\begin_layout Subsection
+Nivel Macro
+\end_layout
+
+\begin_layout BeginFrame
+Propiedades del Nivel Macro
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Emergencia:
+\series default
+ El comportamiento "a nivel de sistema" en un sistema complejo surge del
+ comportamiento de los componentes individuales (tanto sociales como físicos)
+ y sus interacciones.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+La auto-organización:
+\series default
+ El comportamiento emergente surge sin ninguna influencia externa, sino
+ que es el resultado de las interacciones de los tomadores de decisiones
+ autónomas locales.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Co -evolución :
+\series default
+ Los componentes de un cambio de sistema complejo adaptativo en el tiempo.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Dependencia de la trayectoria:
+\series default
+ Significa que los estados y las decisiones actuales y futuras en un sistema
+ complejo dependen del camino de los estados anteriores, las acciones o
+ decisiones, en lugar de simplemente en las condiciones actuales del sistema.
+\end_layout
+
+\begin_layout Section
+Resumen de paradigmas de sistemas socio-técnicos.
+\end_layout
+
+\begin_layout Subsection
+Dinámica de Sistemas.
+\end_layout
+
+\begin_layout BeginFrame
+Dinámica de Sistemas
+\end_layout
+
+\begin_layout Standard
+La dinámica de sistemas es un campo de estudio que Jay Forrester desarrolló
+ en el Instituto de Tecnología de Massachusetts (MIT ) en los años 1950
+ .
+ Forrester llama a este nuevo campo " Industrial Dynamics " y lo definió
+ como : " el estudio de las características de la captación de información
+ de la actividad industrial para mostrar cómo la estructura organizativa,
+ amplificación ( en las políticas ) , y retrasos de tiempo (en las decisiones
+ y acciones) interactúan para influir en el éxito de la empresa
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+La dinámica de sistemas es un paradigma de simulación basado en la retroalimenta
+ción.
+ El concepto de realimentación está en el corazón de la dinámica de sistemas
+ y diagramas de bucles de retroalimentación de información y causalidad
+ circular son herramientas para la conceptualización de la estructura de
+ los sistemas complejos.
+\end_layout
+
+\begin_layout Subsection
+Simulación de Eventos Discretos (DES)
+\end_layout
+
+\begin_layout BeginFrame
+DES
+\end_layout
+
+\begin_layout Itemize
+El paradigma de modelado que sugiere la aproximación de los sistemas del
+ mundo real y los procesos con distintos eventos se llama Simulación de
+ eventos discretos.
+\end_layout
+
+\begin_layout Itemize
+En este paradigma de simulación , el sistema posee en cualquier punto en
+ el tiempo un estado cuya evolución es desencadenada por eventos discretos.
+ La evolución del modelo se rige por un reloj y una lista de eventos en
+ orden cronológico .
+ La ejecución de la simulación se inicia mediante la colocación de un evento
+ inicial en la lista de eventos , procede como un bucle infinito que ejecuta
+ el actual caso más inminente (el que está a la cabeza de la lista de eventos
+ ) , y termina cuando un evento se detiene o la lista queda vacía .
+\end_layout
+
+\begin_layout Subsection
+Modelo Basado en Agentes (ABM)
+\end_layout
+
+\begin_layout BeginFrame
+ABM
+\end_layout
+
+\begin_layout Itemize
+El modelado basado en agentes es un tipo de modelado en el que la atención
+ se centra en la representación de los individuos en el sistema que se denominan
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Agentes
+\begin_inset Quotes erd
+\end_inset
+
+ (como las personas o empresas) y su interacción con los demás y su entorno.
+ El comportamiento global (a nivel de sistema),surge como resultado de las
+ interacciones de los agentes y de sus comportamientos individuales.
+\end_layout
+
+\begin_layout BeginFrame
+Características de un Agente
+\end_layout
+
+\begin_layout Standard
+Las Características generales que definen un agente son:
+\end_layout
+
+\begin_layout Itemize
+Autonomía
+\end_layout
+
+\begin_layout Itemize
+Reactividad
+\end_layout
+
+\begin_layout Itemize
+Pro-actividad
+\end_layout
+
+\begin_layout Itemize
+Capacidad Social
+\end_layout
+
+\begin_layout Itemize
+Adaptabilidad
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+El desarrollo de un modelo basado en agentes típicamente comienza por definir
+ los estados internos (o atributos) y las reglas de comportamiento de los
+ diferentes tipos de agentes.
+ Las reglas de comportamiento se describen, por ejemplo, cómo un agente
+ cambia de estado o selecciona una acción por hacer, cómo los agentes interactúa
+n entre sí y cómo los agentes interactúan con el medio ambiente.
+ Los agentes su estado y el comportamiento y el entorno se estructuran siguiendo
+ un programa de simulación.
 \end_layout
 
 \begin_layout EndFrame
