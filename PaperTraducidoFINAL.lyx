@@ -1096,10 +1096,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Pag9.PNG
@@ -1265,7 +1261,7 @@ Similar a la complejidad a nivel micro , los tres paradigmas de modelado
  de simulación , en todos los casos los resultados de la simulación están
  emergiendo de entidades del modelo de aportación y su interacción .
  La capacidad del SD para producir las propiedades emergentes de un sistema
- complejo, sin embargo, ha sido cuestionada por varios autores .
+ complejo ha sido cuestionada por varios autores .
  En su libro - Simulación para el científico social - Gilbert y Troitzsch
  ( 1999 ) argumentan como lo hizo el emergente propiedades son las " propiedades
  del sistema " como resultado de la conducta y las interacciones ' a nivel

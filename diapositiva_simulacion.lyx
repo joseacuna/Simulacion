@@ -625,6 +625,15 @@ Comparación Nivel Macro
 Nivel Macro
 \end_layout
 
+\begin_layout Standard
+Similar a la complejidad a nivel micro , los tres paradigmas de modelado
+ , es decir SD, DES y ABS - son diferentes en la forma en que puede el captar
+ la complejidad a nivel macro de las cadenas de suministro .
+ La aparición en los sistemas complejos pueden ser abordados en cada enfoque
+ de simulación , en todos los casos los resultados de la simulación están
+ emergiendo de entidades del modelo de aportación y su interacción .
+\end_layout
+
 \begin_layout Section
 Conclusión
 \end_layout
@@ -634,7 +643,15 @@ Conclusión
 \end_layout
 
 \begin_layout Standard
+Observamos que el problema de la cadena de suministro pueden ser simulados
+ a traves de los tres paradigmas estudiados, pero para aplicar dichas simulacion
+es el problema debe ser definidos como sistemas socio-técnicos o como sistemas
+ adaptativos.
+\end_layout
 
+\begin_layout Standard
+tambien establesimos los criterios para la eleccion del paradigma mas adecuado
+ a la problematica.
 \end_layout
 
 \begin_layout EndFrame
